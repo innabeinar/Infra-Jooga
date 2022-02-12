@@ -29,7 +29,7 @@
     }
 
     .cta.gradient {
-        background: linear-gradient(45deg, #f3ec78, #af4261);
+        background: linear-gradient(180deg, #D40946, #F39200);
     }
 
     .tule-tundi {
@@ -60,10 +60,15 @@
         width: 100%;
 
     }
+.container.banner {
+
+    margin-top: 40px;
+}
 
     .juhatajad {
+
         padding-top: 20px;
-        padding-right: 5px;
+        padding-right: 0px;
         padding-bottom: 0px;
         padding-left: 0px;
 
@@ -80,6 +85,10 @@
         font-size: 1.8rem;
         border-radius: 0px;
         border-style: none;
+        width: 317px;
+        height: 83px
+    
+  
     }
 
     .section-title.meist {
@@ -100,31 +109,51 @@
         background-color: #030303;
 
     }
+
+   .footer {
+    background-color: #030303;
+    margin-top: 20px;
+    padding: 40px;
+
+}
+
+.footer-right {
+text-align: end;
+margin-top: 56px;
+}
+
+.navmain {
+    padding: 10px;
+}
+
 </style>
 
 <body>
-    <div class="container">
-
-        <ul class="nav justify-content-space between">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-            </a>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">KOOLITUSED</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">e-pood</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">hinnad</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">tunniplaan</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">logi sisse</a>
-            </li>
-        </ul>
+    <div class="container navmain">
+        <div class="row">
+            <div class="col-2">
+                <img src="infrajooga-logo-black.png" class="img-fluid" alt="logo"> 
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link koolitused" aria-current="page" href="#">Koolitused</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link e-pood" aria-current="page" href="#">e-pood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hinnad" aria-current="page" href="#">Hinnad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tunniplaan" aria-current="page" href="#">Tunniplaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logi-sisse" aria-current="page" href="#">Logi sisse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -282,7 +311,7 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="container">
+        <div class="container banner">
             <div class="row">
 
                 <div class="col-4 px-10">
@@ -353,18 +382,48 @@
                 <button class="btn section-title kontakt">Kontakt</button>
             </div>
         </div>
-        <div class="container footer">
-            <div class="row">
-                <div class="col-md-6 order-md-1 px-10">
-                  <p>logo<br>kontakt</p>  
-                </div>
-                <div class="col-md-6 order-md-2 px-10">
-                    <p>menu</p> 
-                  </div>
-            </div>
+     </div>
+     <div class="container footer">
+         <div class="row">
+         <div class="col-6 footer-left order-md-1">
+           
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                <img src="infrajooga-logo.png" class="img-fluid" alt="logo"> 
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+         </div>
+         <div class="col-6 footer-right order-md-2">
+             <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li> 
+             </ul>
+         </div>
         </div>
-    </div>
-    
+     </div>
+
 
 
 

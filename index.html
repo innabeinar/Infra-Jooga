@@ -14,6 +14,10 @@
     <title>Infra Jooga</title>
 </head>
 <style>
+    .container-fluid {
+        position: relative;
+    }
+
     .cta {
         height: 50%;
         padding: 10px;
@@ -58,11 +62,28 @@
 
     .juhatajad {
         padding-top: 20px;
-  padding-right: 5px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+        padding-right: 5px;
+        padding-bottom: 0px;
+        padding-left: 0px;
 
     }
+
+    .section-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg) translate(-100%, 0);
+        transform-origin: left top;
+        padding: 1rem;
+        font-size: 1.8rem;
+        border-radius: 0px;
+        border-style: none;
+    }
+
+    .section-title.meist {
+        background-color: coral;
+
+            {
 </style>
 
 <body>
@@ -105,13 +126,21 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <button class="btn section-title meist">Meist</button>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
-                <div class="col-6 px-10">
+
+                <div class="col-md-6 px-10">
                     <img src="koos.png" class="img-fluid" alt="Koos">
                 </div>
-                <div class="col-6 px-10">
+                <div class="col-md-6 px-10 teejoogat-block">
                     <p>
                     <h2>Tee joogat<br>ja ole õnnelik!</h2>
                     </p>
@@ -123,9 +152,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 px-10">
+                <div class="col-md-6 order-md-2 px-10 infrapuna-block">
+                    <img src="saal.png" class="img-fluid" alt="Koos">
+                </div>
+                <div class="col-md-6 order-md-1 px-10">
                     <p>
-                    <h2>Infrapunasoojus on<br>
+                    <h2 class="mb5">Infrapunasoojus on<br>
                         looduslik ja<br> tervisele ohutu</h2>
                     <h6>Infrapunasoojus soojendab otseselt lihaseid ja liigeseid, muutes nad elastseks ja
                         painduvaks ning andes nii meile suurema liikumisulatuse joogaasendis. Saame keha rohkem
@@ -137,57 +169,176 @@
                     </h6>
                     </p>
                 </div>
-                <div class="col-6 px-10">
-                    <img src="saal.png" class="img-fluid" alt="Koos">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <button class="btn section-title tunnid">Tundide kirjeldus</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-8">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                vinyasa flow
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                yin yoga
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                taastav yoga
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                rasedate jooga
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                second item's accordion body. Let's imagine this being filled with some
+                                actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                jooga eratund
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                third item's accordion body. Nothing more exciting happening here in terms
+                                of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world
+                                application.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="container">
+            <div class="row">
+
+                <div class="col-4 px-10">
+
+                    <p>
+                    <h2>Esimene <br>samm on kõige<br>olulisem!</h2>
+                    </p>
+                    <h6>Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
+                        joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas.
+
+                        Tunnid sobivad nii algajatele kui ka edasijõudnutele kuna jooga annab võimaluse harjutuste
+                        koormust reguleerida nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                    </h6>
+                </div>
+                <div class="col-8 px-10">
+                    <img src="animation.png" class="img-fluid" alt="Animation">
+                </div>
+                <button style="height:52px;width:138px" class="tule-tundi" role="button">Tule tundi</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <button class="btn section-title">Meist</button>
+            </div>
+        </div>
+        <div class="container">
 
             <div class="row justify-content-center">
-                
-                    <div class="col-4">
-                        <div class="juhatajad temea">
-                            <img src="temea.png" class="img-fluid" alt="Temea">
-                        </div>
+
+                <div class="col-4">
+                    <div class="juhatajad temea">
+                        <img src="temea.png" class="img-fluid" alt="Temea">
                     </div>
-                    <div class="col-4">
-                        <div class="juhatajad kerli">
-                            <img src="kerli.png" class="img-fluid" alt="Temea">
-                        </div>
+                </div>
+                <div class="col-4">
+                    <div class="juhatajad kerli">
+                        <img src="kerli.png" class="img-fluid" alt="Temea">
                     </div>
-                
+                </div>
+
             </div>
             <div class="row justify-content-center">
-                
-                    <div class="col-4">
-                        <div class="juhatajad krista">
-                            <img src="krista.png" class="img-fluid" alt="Temea">
-                        </div>
+
+                <div class="col-4">
+                    <div class="juhatajad krista">
+                        <img src="krista.png" class="img-fluid" alt="Temea">
                     </div>
-                    <div class="col-4">
-                        <div class="juhatajad epp">
-                            <img src="epp.png" class="img-fluid" alt="Temea">
-                        </div>
+                </div>
+                <div class="col-4">
+                    <div class="juhatajad epp">
+                        <img src="epp.png" class="img-fluid" alt="Temea">
                     </div>
-                    <div class="col-4">
-                        <div class="juhatajad helina">
-                            <img src="helina.png" class="img-fluid" alt="Temea">
-                        </div>
+                </div>
+                <div class="col-4">
+                    <div class="juhatajad helina">
+                        <img src="helina.png" class="img-fluid" alt="Temea">
                     </div>
-                
+                </div>
+
             </div>
         </div>
 
         <div class="container container-footer">
             <div class="row">
-                <div class="col order-last">
-                    menu
+                <div class="col order-md-1">
+                    logo contact
                 </div>
-                <div class="col">
-                    logo, contact
+                <div class="col order-md-2">
+                    menu
                 </div>
             </div>
         </div>

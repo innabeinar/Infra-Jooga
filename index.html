@@ -13,7 +13,13 @@
 
     <title>Infra Jooga</title>
 </head>
+
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&display=swap');
+   
+    body {
+        font-family: 'Montserrat', sans-serif;
+}
     .container-fluid {
         position: relative;
     }
@@ -25,6 +31,10 @@
         color: #fff;
         display: flex;
         align-items: flex-end;
+        font-size: 36pt;
+        text-transform: uppercase;
+        line-height: 37pt;
+        font-weight: 300;
     }
 
     .cta.black {
@@ -38,12 +48,12 @@
     }
 
     .tule-tundi {
+        font-weight: 500;
         background-color: #030303;
         border-radius: 0px;
         border-style: none;
         color: #fff;
-        font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
-        font-size: 16px;
+        font-size: 9pt;
         font-weight: 700;
         margin: 0 auto;
         max-width: none;
@@ -52,7 +62,7 @@
         padding: 9px 20px 8px;
         position: relative;
         text-align: center;
-        text-transform: none;
+        text-transform: uppercase;
 
     }
 
@@ -71,6 +81,8 @@
     }
 
     .section-title {
+        font-weight: 300;
+        text-transform: uppercase;
         position: absolute;
         color: #fff;
         top: 0;
@@ -78,11 +90,15 @@
         transform: rotate(-90deg) translate(-100%, 0);
         transform-origin: left top;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 30pt;
         border-radius: 0px;
         border-style: none;
-        width: 317px;
-        height: 63px
+        width: 480px;
+        height: 83px
+       
+
+        
+
     }
 
     .section-title.meist {
@@ -128,6 +144,7 @@
     .accordion-body {
         background-color: #4E4F57;
         color: #fff;
+        
     }
 
     a {
@@ -142,7 +159,10 @@
 
 
     .accordion-button {
-        font-size: 3rem
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 40pt
+        
     }
 
     .accordion-button:focus {
@@ -152,12 +172,14 @@
 
     .accordion-button.juh {
         font-size: 1.5rem
-    
+        
     }
 
+    
 </style>
 
 <body>
+    
     <div class="container navmain">
         <div class="row">
             <div class="col-2">
@@ -194,7 +216,7 @@
                     <p><a href="tunniplaan.html">Broneeri<br>tund</a></p>
                 </div>
                 <div class="cta gradient">
-                    <p><a href="tunniplaan.html">2 esimest tundi<br>tasuta</a></p>
+                    <p><a href="tunniplaan.html">2 esimest <br> tundi<br>tasuta</a></p>
                 </div>
 
             </div>
@@ -254,8 +276,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="col-8">
-
+            <div class="col-9">
+<p>Vali tund tutvumiseks</p>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -409,21 +431,19 @@
             </div>
         </div>
         <div class="container">
-
             <div class="row justify-content-center">
-
                 <div class="col-4">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button juh" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Temea 
+                                    Temea
                                 </button>
                                 <img src="temea.png" class="img-fluid" alt="Temea">
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the first item's accordion body.</strong> It is shown by
                                     default, until the collapse plugin adds the appropriate classes that we use to
@@ -436,10 +456,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
-                   
-                    
                 </div>
                 <div class="col-4">
                     <div class="accordion" id="accordionExample">
@@ -447,12 +463,12 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button juh" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    Kerli 
+                                    Kerli
                                 </button>
                                 <img src="kerli.png" class="img-fluid" alt="Kerli">
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse show"
-                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the first item's accordion body.</strong> It is shown by
                                     default, until the collapse plugin adds the appropriate classes that we use to
@@ -591,9 +607,7 @@
             </div>
         </div>
     </div>
-
-
-
+    
 
 
 

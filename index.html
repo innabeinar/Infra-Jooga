@@ -164,7 +164,20 @@
         font-size: 32pt
         
     }
-
+    .accordion-button::after {
+        width: 2rem;
+        height: 2rem;
+        background-image: url(arrow.svg);
+        background-size: 2rem 2rem;
+    } 
+    .accordion-button:not(.collapsed)::after {
+        width: 2rem;
+        height: 2rem;
+        background-image: url(arrow-white.svg);
+        background-size: 2rem 2rem;
+        color: #fff;
+        transform: rotate(-90deg);
+    }
     .accordion-button:focus {
         background: #4E4F57;
         color: #fff;
@@ -295,6 +308,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
+                               
                                 Vinyasa flow
                             </button>
                         </h2>

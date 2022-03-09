@@ -68,6 +68,11 @@
 
     }
 
+    .tule-tundi:hover {
+    background-color: #030303;
+    color:#5CD978
+}
+
     .container.banner {
 
         margin-top: 40px;
@@ -178,9 +183,16 @@
         color: #fff;
         transform: rotate(-90deg);
     }
+    
+
     .accordion-button:focus {
-        background: #4E4F57;
+        background-color: transparent;
+        color: #000;
+    }
+
+    .accordion-button:not(.collapsed) {
         color: #fff;
+        background-color: #4E4F57;
     }
 
     .accordion-button.juh {
@@ -200,15 +212,36 @@
         background-image: url(arrow.svg);
         background-size: 1.5rem 1.5rem;
     } 
-
-    .h2 {
+  /* mobiil */
+  h2 {
         text-transform: uppercase;
-        font-size: 16pt
-        
-        
+        font-size: 2rem;
+        font-weight:300; 
+        color:#030303;
+    }
+    
+    p {
+    }
+         /* tablet */
+
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 1,5rem;
+        }
+
+        p {
+
+        }
     }
    
-    
+  /* desktop */
+
+  @media (min-width: 992px) {
+        h2 {
+            font-size: 3rem;
+        }
+
+    }   
 </style>
 
 <body>
@@ -271,12 +304,12 @@
                 </div>
                 <div class="col-md-6 px-10 teejoogat-block">
                     <p>
-                    <h2> <span style="text-transform: uppercase; font-weight:300; color:#030303; font-size: 3rem;">Tee joogat<br>ja ole õnnelik!</span> </h2>
+                    <h2> Tee joogat<br>ja ole õnnelik!</h2>
                     </p>
-                  <p> <span style="font-size: 0.875rem; line-height: normal;"> Infra Jooga on ainulaadne joogastuudio Eestis, kus jooga iidsed traditsioonid on toodud
+                  <p>  Infra Jooga on ainulaadne joogastuudio Eestis, kus jooga iidsed traditsioonid on toodud
                     tänapäeva, et igaüks saaks osa jooga suurepärasest mõjust. Oleme ühendanud igivana süsteemi ja
                     filosoofia uuendusliku infrapunasoojusega viies tunde läbi ruumis, mille temperatuur on
-                    keskmisest kõrgem, +25 kuni +32 kraadi.</span> </p> 
+                    keskmisest kõrgem, +25 kuni +32 kraadi. </p> 
                     
                 </div>
             </div>
@@ -286,8 +319,8 @@
                 </div>
                 <div class="col-md-6 order-md-1 px-10">
                     <p>
-                        <h2> <span style="text-transform: uppercase; font-weight:300; color:#030303; font-size: 3rem">Infrapunasoojus on<br>
-                            looduslik ja<br> tervisele ohutu</span> </h2>
+                        <h2> Infrapunasoojus on<br>
+                            looduslik ja<br> tervisele ohutu</h2>
                         </p>
                     
                         

@@ -133,7 +133,7 @@
         background-color: #030303;
     }
 
-    .footer {
+    .container-fluid.footer {
         background-color: #030303;
         margin-top: 10px;
         padding-top: 55px;
@@ -171,11 +171,20 @@
 
 
     .accordion-button {
+        border: .1px solid #030303;    
+        border-top: none;
+        border-left: none;
+        border-right: none;
         font-weight: 300;
         text-transform: uppercase;
         font-size: 3rem
         
     }
+
+    .accordion-button:hover::after {
+        background-image: url(arrow.svg);
+        transform: rotate(-45deg);
+}
     .accordion-button::after {
         width: 2rem;
         height: 2rem;
@@ -190,9 +199,7 @@
         color: #fff;
         transform: rotate(-90deg);
     }
-    
-
-    .accordion-button:focus {
+     .accordion-button:focus {
         background-color: transparent;
         color: #000;
     }
@@ -201,10 +208,16 @@
         color: #fff;
         background-color: #4E4F57;
     }
+
     .accordion-button.juh {
+        border: .1px solid #030303;    
+        border-top: none;
+        border-left: none;
+        border-right: none;
         font-weight: 300;
         text-transform: uppercase;
         font-size: 1rem
+        
         
     }
     .accordion-button.juh::after {
@@ -213,6 +226,10 @@
         background-image: url(arrow.svg);
         background-size: 1rem 1rem;
     } 
+    .accordion-button.juh:hover::after {
+        background-image: url(arrow.svg);
+        transform: rotate(-45deg);
+}
     .accordion-button.juh:not(.collapsed)::after {
         width: 1rem;
         height: 1rem;
@@ -676,13 +693,8 @@ font-size: 0,875rem;
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1">
-                <button class="btn section-title kontakt">Kontakt</button>
-            </div>
-        </div>
-    </div>
+    <div class="container-fluid footer">
+      
     <div class="container footer">
         <div class="row">
             <div class="col-2">

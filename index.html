@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <script src=”https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,9 @@
         height: 700px;
   background-image: url("avaleht-1.jpg");
 }
+
+
+
     .cta {
         
         align-content: flex-end; 
@@ -135,7 +138,6 @@
 
     .section-title.meist {
         background-color: #D40946;
-
     }
 
     .section-title.tunnid {
@@ -200,22 +202,31 @@
         text-transform: uppercase;
         font-size: 3rem
         
+        
     }
-
+    .accordion-button:hover {
+    transition: 0.5s;
+    padding-bottom:30px;
+    
+    }
     
     .accordion-button::after {
+      
         width: 2rem;
         height: 2rem;
         background-image: url(arrow.svg);
         background-size: 2rem 2rem;
+        
     } 
     .accordion-button:hover::after {
    background-image: url(arrow.svg);
    transform: rotate(-45deg);
    transition: 0.5s;
+   
   
 }
     .accordion-button:not(.collapsed)::after {
+        
         border-color: #fff;
         width: 2rem;
         height: 2rem;
@@ -242,9 +253,12 @@
         border-right: none;
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 1.5rem
-        
-        
+        font-size: 1.5rem    
+    }
+    .accordion-button.juh:hover {
+    transition: 0.5s;
+    padding-bottom:20px;
+    
     }
     .accordion-button.juh::after {
         border-color: #fff;
@@ -407,8 +421,7 @@ font-size: 0,875rem;
                 </div>
                 <div class="col-md-6 order-md-1 px-10">
                     <p>
-                        <h2> Infrapunasoojus on<br>
-                            looduslik ja<br> tervisele ohutu</h2>
+                        <h2> tervisele ohutu</h2>
                         </p>
                     
                         
@@ -624,7 +637,7 @@ font-size: 0,875rem;
                                     data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
                                     Epp
                                 </button>
-                                <img src="krista.png" class="img-fluid mt-2" alt="Krista">
+                                <img src="kerli.png" class="img-fluid mt-2" alt="Kerli">
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionflushExample">

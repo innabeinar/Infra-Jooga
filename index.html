@@ -53,13 +53,9 @@ padding-left: 10px;
 
   }
 
-  .cta:hover  {
-    
-
-}
-
+ 
 .cta:hover:after {
-    transition: 0.75s;
+transition: 0.75s;
   padding-bottom: 10px;
   padding-left: 80px; 
 }
@@ -181,6 +177,26 @@ padding-left: 10px;
     .nav-link:hover{
         color: #D40946;
     }
+.nav-link.logi-sisse{
+align-content: flex-start; 
+}
+
+.nav-link.logi-sisse:after {
+   content: url(arrow-logisisse.svg);
+   padding-left: 0px; 
+
+  }
+
+ 
+.nav-link.logi-sisse:hover:after {
+transition: 0.75s;
+padding-left: 30px; 
+}
+
+}
+   
+    
+}
 
     .nav-link-buttom{
         color: #fff;
@@ -402,8 +418,8 @@ font-size: 0,875rem;
                     <li class="nav-item">
                         <a class="nav-link tunniplaan" aria-current="page" href="#">Tunniplaan</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link logi-sisse" aria-current="page" href="#">Logi sisse</a>
+                    <li class="logi-sisse">
+                        <a class="nav-link logi-sisse" aria-current="page" href="#">logi sisse</a>
                     </li>
                 </ul>
             </div>

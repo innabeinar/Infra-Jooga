@@ -40,15 +40,33 @@
         line-height: 37pt;
         font-weight: 300;
     }
+  
+  .cta:after {
+   content: url(arrow-white-avaleht.svg);
+   padding-bottom: 15px;
+   padding-left: 20px; 
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+  }
+
+  .cta:hover {
     
+
+}
+
+.cta:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 
     .cta.black {
         align-content: flex-end;
         align-items: flex-end;
         background-color: black;
-
-
     }
+ 
+ 
 
     .cta.gradient {
         align-items: flex-end;

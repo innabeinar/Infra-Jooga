@@ -53,15 +53,11 @@ padding-left: 10px;
 
   }
 
-  .cta:hover  {
-    
-
-}
-
+ 
 .cta:hover:after {
-    transition: 0.75s;
+transition: 0.75s;
   padding-bottom: 10px;
-  padding-left: 80px; 
+  padding-left: 45px; 
 }
 
     .cta.black {
@@ -167,6 +163,7 @@ padding-left: 10px;
     }
 
     .navmain {
+     
         font-size: 1rem;
         padding: 15px;
         text-transform: uppercase;
@@ -174,12 +171,47 @@ padding-left: 10px;
         color: #030303;
     }
     .nav-link{
+        
         color: #030303;
     }
 
     .nav-link:hover{
         color: #D40946;
     }
+
+
+.nav-link.logi-sisse:after {
+   content: url(arrow-logisisse.svg);
+   padding-left: 10px; 
+
+  }
+
+ 
+.nav-link.logi-sisse:hover:after {
+transform: rotate(45deg);
+transition: 0.75s;
+ 
+}
+
+
+   
+    
+
+
+    .nav-link-buttom{
+        color: #fff;
+    }
+
+    .nav-link-buttom:hover{
+        color: #DADADA;
+    }
+  
+
+.accordion-item{
+    border:0px none;
+}
+
+
     .footer-left {
         text-align: bottom;
     }
@@ -206,6 +238,7 @@ padding-left: 10px;
    
     .accordion-button {
         
+       
         border: .1px solid #030303;    
         border-top: none;
         border-left: none;
@@ -216,7 +249,6 @@ padding-left: 10px;
         
         
     }
-
     .accordion-button:hover {
     transition: 0.5s;
     padding-bottom:30px;
@@ -229,13 +261,14 @@ padding-left: 10px;
         height: 2rem;
         background-image: url(arrow.svg);
         background-size: 2rem 2rem;
+       
         
     } 
     .accordion-button:hover::after {
    background-image: url(arrow.svg);
    transform: rotate(-45deg);
    transition: 0.5s;
-   
+  
   
 }
     .accordion-button:not(.collapsed)::after {
@@ -266,7 +299,7 @@ padding-left: 10px;
         border-right: none;
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.5rem    
     }
     .accordion-button.juh:hover {
     transition: 0.5s;
@@ -307,16 +340,9 @@ padding-left: 10px;
         background-color: #4E4F57;
     }
 
-
-    .accordion-item:last-of-type .accordion-button.collapsed {
-    border-radius: 0;
-}
-.accordion-item:first-of-type .accordion-button {
-    border-radius: 0;
-}
-
-
-
+    .accordion-item:last-of-type .accordion-button.collapsed{
+        border-radius: 0px;
+    }
 /* esmane *
     .accordion-button.juh {
         color: #030303;
@@ -340,9 +366,9 @@ padding-left: 10px;
   /* mobiil */
   h2 {
         text-transform: uppercase;
-        font-size: 0,750rem;
+        font-size: 2rem;
         font-weight:300; 
-        color:#030303;
+        
     }
     
     p {
@@ -352,12 +378,13 @@ padding-left: 10px;
 
     @media (min-width: 768px) {
         h2 {
-            font-size: 1,5rem;
+            font-size: 2rem;
         }
 
         p {
 font-size: 0,750rem;
         }
+    
     }
    
   /* desktop */
@@ -367,7 +394,7 @@ font-size: 0,750rem;
             font-size: 3rem;
         }
         p {
-font-size: 0,875rem;
+font-size: 0.875rem;
         }
     }   
 </style>
@@ -393,8 +420,8 @@ font-size: 0,875rem;
                     <li class="nav-item">
                         <a class="nav-link tunniplaan" aria-current="page" href="#">Tunniplaan</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link logi-sisse" aria-current="page" href="#">Logi sisse</a>
+                    <li class="logi-sisse">
+                        <a class="nav-link logi-sisse" aria-current="page" href="#">logi sisse</a>
                     </li>
                 </ul>
             </div>
@@ -405,10 +432,10 @@ font-size: 0,875rem;
            
             <div class="col-md-4 px-0">
                 <div class="cta black">
-                    <p><a href="tunniplaan.html">Broneeri<br>tund</a></p>
+                    <h2><a href="tunniplaan.html">Broneeri<br>tund</a></h2>
                 </div>
                 <div class="cta gradient">
-                    <p><a href="tunniplaan.html">2 esimest <br> tundi<br>tasuta</a></p>
+                    <h2><a href="tunniplaan.html">2 esimest <br> tundi<br>tasuta</h2></p>
                 </div>
 
             </div>
@@ -480,7 +507,7 @@ font-size: 0,875rem;
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
                                
-                                Vinyasa flow
+                                <h2>Vinyasa flow</h2>
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -489,15 +516,12 @@ font-size: 0,875rem;
                                 <div class="container">
                                     <div class="row">
 
-                                        <img src="vinyasa-flow.png" class="img-fluid" alt="Vinyasa-Flow">
-                                        <p>Milline on joogatund? </p>
+                                        <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow" >
+                                        <p> Milline on joogatund? </p>
 
                                         <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
                                             harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
-                                            võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
-                                            vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
-                                            abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
-                                            päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+                                            võimalik ka mediteerida. </p>
 
                                         <p> Miks teha joogat soojas?</p>
 
@@ -505,20 +529,14 @@ font-size: 0,875rem;
                                             paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
                                             asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
                                             masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
-                                            Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
-                                            jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
-                                            kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
-                                            tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
-                                            jooksul.</p>
+                                            Soojus vähendab ka vigastuste ohtu. </p>
 
                                         <p> Kellele see tund sobib?</p>
 
                                         <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
                                             harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
                                             nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
-                                            Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
-                                            konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
-                                            temperatuuriga saalis.
+                                        
                                         </p>
 
 
@@ -533,15 +551,50 @@ font-size: 0,875rem;
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                yin yoga 
+                               <h2>yin yoga </h2> 
                               
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                first item's accordion body.</div>
+                            <div class="accordion-body"> <div class="container">
+                                <div class="row">
+
+                                    <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow" >
+                                    <p>Milline on joogatund? </p>
+
+                                    <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
+                                        harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
+                                        võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
+                                        vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
+                                        abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
+                                        päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+
+                                    <p> Miks teha joogat soojas?</p>
+
+                                    <p> Soe ruum on jooga harrastamiseks parim. Kõrgem temperatuur muudab keha
+                                        paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
+                                        asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
+                                        masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
+                                        Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
+                                        jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
+                                        kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
+                                        tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
+                                        jooksul.</p>
+
+                                    <p> Kellele see tund sobib?</p>
+
+                                    <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
+                                        harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
+                                        nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                                        Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
+                                        konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
+                                        temperatuuriga saalis.
+                                    </p>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -549,14 +602,50 @@ font-size: 0,875rem;
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                taastav yoga
+                                <h2>taastav yoga</h2>
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                first item's accordion body.</div>
+                            <div class="accordion-body"> <div class="container">
+                                <div class="row">
+
+                                    <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow" >
+                                    <p>Milline on joogatund? </p>
+
+                                    <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
+                                        harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
+                                        võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
+                                        vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
+                                        abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
+                                        päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+
+                                    <p> Miks teha joogat soojas?</p>
+
+                                    <p> Soe ruum on jooga harrastamiseks parim. Kõrgem temperatuur muudab keha
+                                        paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
+                                        asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
+                                        masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
+                                        Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
+                                        jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
+                                        kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
+                                        tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
+                                        jooksul.</p>
+
+                                    <p> Kellele see tund sobib?</p>
+
+                                    <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
+                                        harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
+                                        nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                                        Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
+                                        konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
+                                        temperatuuriga saalis.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -564,15 +653,50 @@ font-size: 0,875rem;
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFour" aria-expanded="false"
                                 aria-controls="flush-collapseFour">
-                                rasedate jooga
+                               <h2>rasedate jooga</h2> 
                             </button>
                         </h2>
                         <div id="flush-collapseFour" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                second item's accordion body. Let's imagine this being filled with some
-                                actual content.</div>
+                            <div class="accordion-body"> <div class="container">
+                                <div class="row">
+
+                                    <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow" >
+                                    <p>Milline on joogatund? </p>
+
+                                    <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
+                                        harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
+                                        võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
+                                        vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
+                                        abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
+                                        päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+
+                                    <p> Miks teha joogat soojas?</p>
+
+                                    <p> Soe ruum on jooga harrastamiseks parim. Kõrgem temperatuur muudab keha
+                                        paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
+                                        asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
+                                        masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
+                                        Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
+                                        jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
+                                        kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
+                                        tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
+                                        jooksul.</p>
+
+                                    <p> Kellele see tund sobib?</p>
+
+                                    <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
+                                        harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
+                                        nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                                        Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
+                                        konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
+                                        temperatuuriga saalis.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -580,17 +704,50 @@ font-size: 0,875rem;
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFive" aria-expanded="false"
                                 aria-controls="flush-collapseFive">
-                                jooga eratund
+                               <h2>jooga eratund</h2> 
                             </button>
                         </h2>
                         <div id="flush-collapseFive" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                third item's accordion body. Nothing more exciting happening here in terms
-                                of content, but just filling up the space to make it look, at least at first
-                                glance, a bit more representative of how this would look in a real-world
-                                application.</div>
+                            <div class="accordion-body"> <div class="container">
+                                <div class="row">
+
+                                    <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow" >
+                                    <p>Milline on joogatund? </p>
+
+                                    <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
+                                        harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
+                                        võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
+                                        vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
+                                        abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
+                                        päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+
+                                    <p> Miks teha joogat soojas?</p>
+
+                                    <p> Soe ruum on jooga harrastamiseks parim. Kõrgem temperatuur muudab keha
+                                        paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
+                                        asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
+                                        masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
+                                        Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
+                                        jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
+                                        kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
+                                        tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
+                                        jooksul.</p>
+
+                                    <p> Kellele see tund sobib?</p>
+
+                                    <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
+                                        harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
+                                        nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                                        Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
+                                        konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
+                                        temperatuuriga saalis.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -634,7 +791,7 @@ font-size: 0,875rem;
                             <h2 class="accordion-header" id="heading1">
                                 <button class="accordion-button juh collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapse1" aria-expanded="true" aria-controls="flush-collapse1">
-                                    Krista
+                                    Temea
                                 </button>
                                 <img src="temea.png" class="img-fluid mt-2" alt="Temea">
                             </h2>
@@ -780,18 +937,18 @@ font-size: 0,875rem;
             <div class="col-2 footer-right order-md-2">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">koolitused</a>
+                        <a class="nav-link-buttom" href="#">koolitused</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hinnad</a>
+                        <a class="nav-link-buttom" href="#">Hinnad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tunniplaan</a>
+                        <a class="nav-link-buttom" href="#">Tunniplaan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">e-pood</a>
+                        <a class="nav-link-buttom">e-pood</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logi sisse</a>
+                        <a class="nav-link-buttom" href="#">Logi sisse</a>
                     </li>
                     </li>
                 </ul>

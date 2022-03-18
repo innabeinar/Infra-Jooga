@@ -53,9 +53,13 @@ padding-left: 10px;
 
   }
 
- 
+  .cta:hover  {
+    
+
+}
+
 .cta:hover:after {
-transition: 0.75s;
+    transition: 0.75s;
   padding-bottom: 10px;
   padding-left: 80px; 
 }
@@ -176,34 +180,6 @@ transition: 0.75s;
 
     .nav-link:hover{
         color: #D40946;
-    }
-.nav-link.logi-sisse{
-align-content: ;
-}
-
-.nav-link.logi-sisse:after {
-   content: url(arrow-logisisse.svg);
-   padding-left: 10px; 
-
-  }
-
- 
-.nav-link.logi-sisse:hover:after {
-transition: 0.75s;
-padding-left: 30px; 
-}
-
-
-   
-    
-
-
-    .nav-link-buttom{
-        color: #fff;
-    }
-
-    .nav-link-buttom:hover{
-        color: #DADADA;
     }
   
 
@@ -418,8 +394,8 @@ font-size: 0,875rem;
                     <li class="nav-item">
                         <a class="nav-link tunniplaan" aria-current="page" href="#">Tunniplaan</a>
                     </li>
-                    <li class="logi-sisse">
-                        <a class="nav-link logi-sisse" aria-current="page" href="#">logi sisse</a>
+                    <li class="nav-item">
+                        <a class="nav-link logi-sisse" aria-current="page" href="#">Logi sisse</a>
                     </li>
                 </ul>
             </div>
@@ -505,7 +481,7 @@ font-size: 0,875rem;
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
                                
-                                Vinyasa flow
+                              Vinyasa flow
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -514,7 +490,7 @@ font-size: 0,875rem;
                                 <div class="container">
                                     <div class="row">
 
-                                        <img src="vinyasa-flow.png" class="img-fluid" alt="Vinyasa-Flow">
+                                        <img src="vinyasa-flow.png" class="img-fluid mb-3" alt="Vinyasa-Flow">
                                         <p>Milline on joogatund? </p>
 
                                         <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
@@ -805,18 +781,18 @@ font-size: 0,875rem;
             <div class="col-2 footer-right order-md-2">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link-buttom" href="#">koolitused</a>
+                        <a class="nav-link active" aria-current="page" href="#">koolitused</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-buttom" href="#">Hinnad</a>
+                        <a class="nav-link" href="#">Hinnad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-buttom" href="#">Tunniplaan</a>
+                        <a class="nav-link" href="#">Tunniplaan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-buttom">e-pood</a>
+                        <a class="nav-link disabled">e-pood</a>
                     <li class="nav-item">
-                        <a class="nav-link-buttom" href="#">Logi sisse</a>
+                        <a class="nav-link" href="#">Logi sisse</a>
                     </li>
                     </li>
                 </ul>

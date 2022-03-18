@@ -31,6 +31,10 @@
 .container{
 padding-left: 10px;
 }
+
+.container.stuudio{
+    height: 700px;
+}
     .cta {
         
         align-content: flex-end; 
@@ -205,9 +209,12 @@ padding-left: 10px;
     }
  
     .accordion-body {
-     
-        background-color: #4E4F57;
-        color: #fff;
+        border: .1px solid #030303;    
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: #fff;
+        color: #030303;
         
     }
 
@@ -248,10 +255,10 @@ padding-left: 10px;
 }
     .accordion-button:not(.collapsed)::after {
         
-        border-color: #fff;
+        
         width: 2rem;
         height: 2rem;
-        background-image: url(arrow-white.svg);
+        background-image: url(arrow.svg);
         background-size: 2rem 2rem;
         color: #fff;
         transform: rotate(-90deg);
@@ -262,9 +269,9 @@ padding-left: 10px;
     }
 
     .accordion-button:not(.collapsed) {
-        border-color: #fff;
-        color: #fff;
-        background-color: #4E4F57;
+        
+        color: #030303;
+        background-color: #ffffff;
     }
 
     .accordion-button.juh {
@@ -293,12 +300,12 @@ padding-left: 10px;
         transform: rotate(-45deg);
 }
     .accordion-button.juh:not(.collapsed)::after {
-        border-color: #fff;
+        
         width: 1.5rem;
         height: 1.5rem;
-        background-image: url(arrow-white.svg);
+        background-image: url(arrow.svg);
         background-size: 1.5rem 1.5rem;
-        color: #fff;
+        color: #030303;
         transform: rotate(-90deg);
     }
     
@@ -310,13 +317,19 @@ padding-left: 10px;
     }
 
     .accordion-button.juh:not(.collapsed) {
-        border-color: #fff;
-        color: #fff;
-        background-color: #4E4F57;
+        
+        color: #030303;
+        background-color: #fff;
     }
 
     .accordion-item:last-of-type .accordion-button.collapsed{
         border-radius: 0px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 3rem;
     }
 /* esmane *
     .accordion-button.juh {
@@ -423,8 +436,8 @@ font-size: 0,875rem;
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
+        <div class="container stuudio">
+            <div class="row mt-3 mb-3">
 
                 <div class="col-md-6 px-10">
                     <img src="koos.png" class="img-fluid" alt="Koos">
@@ -440,7 +453,7 @@ font-size: 0,875rem;
                     
                 </div>
             </div>
-            <div class="row">
+            <!--  <div class="row">
                 <div class="col-md-6 order-md-2 px-10 infrapuna-block">
                     <img src="saal.png" class="img-fluid" alt="Koos">
                 </div>
@@ -462,7 +475,7 @@ font-size: 0,875rem;
                     </p>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container-fluid">
@@ -495,10 +508,7 @@ font-size: 0,875rem;
 
                                         <p> See jõuline ja intensiivne, kuid samas voolav liikumine, tekitab ahelefekti
                                             harjutuste vahel ning muudab need üheks tervikuks nii, et samal ajal on
-                                            võimalik ka mediteerida. Igas joogatunnis koged tugevust, paindlikkust ja
-                                            vastupidavust, sest ühte tundi mahub nii jõu arendamine oma keha raskuse
-                                            abil, kui ka venitused ning sirutused. Iga tund on natuke erinev, sisaldades
-                                            päikesetervitusi, erinevaid harjutuste seeriad ning lõpulõdvestust. </p>
+                                            võimalik ka mediteerida. </p>
 
                                         <p> Miks teha joogat soojas?</p>
 
@@ -506,20 +516,13 @@ font-size: 0,875rem;
                                             paindlikumaks, lihaste pinge ja jäikus vähenevad ning nii on võimalik
                                             asendites sügavamale minna. Painutuste, venituste ja kehapöörete kaudu
                                             masseeritakse seedeelundeid ning vabastatakse keha stressist ja pingetest.
-                                            Soojus vähendab ka vigastuste ohtu. Tänu intensiivsusele, põletab Vinyasa
-                                            jooga kaloreid ning puhastab organismi, ainevahetus kiireneb ning püsib
-                                            kiirena ka pikka aega peale treeningut. Olenevalt sellest, kui intensiivselt
-                                            tunnis osaleda, võib keha põletada 300-400 kilokalorit ühe joogatunni
-                                            jooksul.</p>
+                                            Soojus vähendab ka vigastuste ohtu.</p>
 
                                         <p> Kellele see tund sobib?</p>
 
                                         <p> See joogatund sobib nii algajatele kui ka edasijõudnutele jooga
                                             harrastajatele kuna jooga annab võimaluse harjutuste koormust reguleerida
                                             nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
-                                            Kui sul on terviseprobleeme, siis on soovitav enne tundi tulekut
-                                            konsulteerida oma arstiga, kuna tund toimub tavalisest kõrgema
-                                            temperatuuriga saalis.
                                         </p>
 
 
@@ -602,18 +605,17 @@ font-size: 0,875rem;
         <div class="container banner">
             <div class="row">
 
-                <div class="col-4 px-10">
+                <div class="col-5 px-10 mt-5">
 
-                    <p><span style="text-transform: uppercase; font-weight: 700; font-size: 3rem; line-height: normal;">
-                    Esimene <br>samm on kõige<br>olulisem!  </span> </p>
-                    <p> <span style="font-size: 0.875rem; line-height: normal;">Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
+                    <p>
+                   <h3> Esimene samm on kõige olulisem!</h3></p>
+                    <p> Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
                         joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas.
 
-                        Tunnid sobivad nii algajatele kui ka edasijõudnutele kuna jooga annab võimaluse harjutuste
-                        koormust reguleerida nii, et saad ise raskusastme valida ja järgida oma keha võimeid.</span>
+                        Tunnid sobivad nii algajatele kui ka edasijõudnutele .
                     </p>
                 </div>
-                <div class="col-8  px-10">
+                <div class="col-7  px-10">
                     <img src="animation.png" class="img-fluid" alt="Animation">
                 </div>
                 <button style="height:52px;width:138px" class="tule-tundi" role="button">Tule tundi</button>
@@ -622,7 +624,7 @@ font-size: 0,875rem;
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-1">
                 <button class="btn section-title juhendajad">Juhendajad</button>
             </div>

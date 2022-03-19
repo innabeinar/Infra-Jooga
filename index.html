@@ -26,8 +26,9 @@
         position: relative;
     }
     .container-fluid.avaleht {
-        height: 700px;
+        height: 600px;
   background-image: url("img/avaleht-1.jpg");
+  background-size: cover;
 }
 
 .container-fluid-epood {
@@ -46,7 +47,7 @@ padding-left: 10px;
     .cta {
         
         align-content: flex-end; 
-        height: 350px;
+        height: 300px;
         padding-bottom: 20px;
         padding-left: 20px;
         color: #fff;
@@ -127,10 +128,11 @@ padding-left: 10px;
     }
 
     .section-title {
-      
+     position: fixed;
+      background-color: #D40946;
         font-weight: 300;
         text-transform: uppercase;
-        position: absolute;
+        
         color: #fff;
         top: 0;
         left: 0;
@@ -140,8 +142,9 @@ padding-left: 10px;
         font-size: 2.25rem;
         border-radius: 0px;
         border-style: none;
-        width: 480px;
+        width: 300px;
         height: 83px
+        
        
 
         
@@ -161,9 +164,7 @@ padding-left: 10px;
 
     }
 
-    .section-title.kontakt {
-        background-color: #030303;
-    }
+
 
     .container-fluid.footer {
         background-color: #030303;
@@ -348,7 +349,6 @@ padding-left: 10px;
    margin-top: 25%;
 }
 
-
 /* esmane *
     .accordion-button.juh {
         color: #030303;
@@ -409,6 +409,8 @@ font-size: 0,875rem;
 	border-radius: 3px;
 	font-size: 0;
     } 
+
+    
 </style>
 
 <body>
@@ -457,17 +459,17 @@ font-size: 0,875rem;
     <div class="container-fluid">
         <div class="row">
             <div class="col-1">
-                <button class="section-title meist">Meist</button>
+                <button class="section-title">Social?</button>
             </div>
         </div>
 
         <div class="container stuudio">
-            <div class="row mt-3 mb-3 row justify-content-between">
+            <div class="row mt-3 mb-3">
 
                
             <div class="row justify-content-center">
                 
-                <div class="col-md-6">
+                <div class="col-md-6 order-md-1">
                     <p>
                         <h2> Tee joogat<br>ja ole õnnelik!</h2>
                         </p>
@@ -478,12 +480,15 @@ font-size: 0,875rem;
                         
                     
                 </div>
-                <div class="col-md-6">
-                    <img src="img/koos.jpg" class="img-responsive" alt="Koos">
+                <div class="col-md-6 order-md-2">
+                    <img src="img/koos.jpg" class="img-fluid" alt="Koos">
                 </div>
             </div>
-            <div class="row justify-content-end">
-                <div class="col-md-8 mt-3">
+            <div class="row">
+            </div>
+           
+                <div class="col-md-6 mt-3 order-md-2">
+                    
                     <p>
                         <h2> tervisele ohutu</h2>
                         </p>  
@@ -496,40 +501,22 @@ font-size: 0,875rem;
 
                     </p>
                 </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="img/koos.jpg" class="img-fluid" alt="Koos">
+                </div>
             </div>
             </div>
         </div>
     </div>
+    
     <div class="container-fluid">
-        <div class="container banner">
-            <div class="row">
-
-                <div class="col-5 px-10 mt-3">
-
-                    <p>
-                   <h3> Esimene samm on kõige olulisem!</h3></p>
-                    <p> Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
-                        joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas.
-
-                        Tunnid sobivad nii algajatele kui ka edasijõudnutele .
-                    </p>
-                </div>
-                <div class="col-7  px-10">
-                    <img src="img/animation.png" class="img-fluid" alt="Animation">
-                </div>
-                <button style="height:52px;width:138px" class="tule-tundi" role="button">Tule tundi</button>
-            </div>
-
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-1">
+       <!-- <div class="row mt-5">
+              <div class="col-1">
                 <button class="btn section-title tunnid">Tundide kirjeldus</button>
             </div>
-        </div>
+        </div>-->
         <div class="container">
-            <div class="col-9 mt-3">
+            <div class="col-9 mt-5">
 <p> <span style="text-transform: uppercase; font-weight: 700; font-size: 1rem;"> Vali tund tutvumiseks</span> </p>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -645,13 +632,34 @@ font-size: 0,875rem;
             </div>
         </div>
     </div>
-    
     <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="container banner">
+            <div class="row">
+
+                <div class="col-5 px-10 mt-3">
+
+                    <p>
+                   <h3> Esimene samm on kõige olulisem!</h3></p>
+                    <p> Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
+                        joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas.
+
+                        Tunnid sobivad nii algajatele kui ka edasijõudnutele .
+                    </p>
+                </div>
+                <div class="col-7  px-10">
+                    <img src="img/animation.png" class="img-fluid" alt="Animation">
+                </div>
+                <button style="height:52px;width:138px" class="tule-tundi" role="button">Tule tundi</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!--<div class="row mt-5">
             <div class="col-1">
                 <button class="btn section-title juhendajad">Juhendajad</button>
-            </div>
-        </div>
+            </div> 
+        </div> -->
         <div class="container">
             <div class="row justify-content-center mt-3">
                 <div class="col-md-4">

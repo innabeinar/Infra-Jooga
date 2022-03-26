@@ -136,7 +136,7 @@
 
     .section-title {
         /* position: fixed; */
-     
+        display: block;
         background-color: black;
         font-weight: 300;
         text-transform: uppercase;
@@ -153,11 +153,21 @@
         height: 80px
     }
 
-    .section-title::after {
-        content: url(img/facebook.svg);
-        url(img/insta.svg)
-       
+    
+    .section-title .fb img {
+        margin-top: 15px;
+       margin-right: 10px;
+       margin-bottom: 15px;
     }
+
+    .section-title .ig img {
+        margin-left: 15px;
+        margin-top: 15px;
+       margin-right: 20px;
+       margin-bottom: 15px;
+    }
+
+    
 
    
   
@@ -193,20 +203,14 @@
     .navbar {
 
         color: #030303;
-        font-weight: 600;
+        font-weight: 500;
         text-transform: uppercase;
         padding: 10px;
         font-size: 1rem;
         align-items: center
     }
 
-    .nav-link {
-        color: #030303;
-    }
-
-    .nav-link:hover {
-        color: #D40946;
-    }
+    
 
 
     .accordion-item {
@@ -366,9 +370,7 @@
         scroll-snap-type: unset;
     }
 
-    .epood {
-        margin-top: 25%;
-    }
+  
 
     /* esmane *
     .accordion-button.juh {
@@ -443,6 +445,19 @@
     .row.sticky-top {
         height: 0px;
     }
+
+    
+    .navbar-collapse.show, .navbar-collapse.collapsing {
+
+position: absolute;
+background-color: white;
+z-index: 1000;
+padding: 25px;
+width: 100vw;
+height: 100vw;
+left: 0;
+top: 75px;
+}
 </style>
 
 <body>
@@ -485,7 +500,7 @@
 
     <div>
 
-        <div class="container-fluid d-md-none">
+        <div class="container-fluid d-md-none px-0">
             <img src="img/avaleht-mobil.jpg" class="img-fluid">
         </div>
         <div class="container-fluid avaleht">
@@ -504,8 +519,9 @@
             </div>
         </div>
         <div class="row sticky-top">
-            <div class="col-1 d-none d-md-inline">
-                <button class="section-title "></button>
+            <div class="col-1 d-none d-md-inline section-title">
+                <a href="https://www.instagram.com/infrajooga/" class="ig"><img src="img/insta.svg"></a>
+                <a href="https://www.facebook.com/InfraJooga" class="fb"><img src="img/facebook.svg"></a>
                 
             </div>
         </div>
@@ -953,7 +969,7 @@
                 <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
               </div>
         </div>
-          <div class="col-sm-3">
+        <div class="col-sm-9 text-md-end">
             <p>Narva mnt 9E<br>Tallinn<br>555 10 575<br>info@infrajooga.ee</p>
         </div>
         <div class="col-sm-1">

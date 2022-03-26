@@ -136,7 +136,7 @@
 
     .section-title {
         /* position: fixed; */
-     
+        display: block;
         background-color: black;
         font-weight: 300;
         text-transform: uppercase;
@@ -153,10 +153,19 @@
         height: 80px
     }
 
-   
-    .section-title.meist {
-        background-color: #D40946;
+    
+    .section-title .fb img {
+        margin-top: 30px;
     }
+
+    .section-title .ig img {
+        margin-top: 30px;
+    }
+
+    
+
+   
+  
 
     .section-title.tunnid {
         background-color: #FF9900;
@@ -439,6 +448,19 @@
     .row.sticky-top {
         height: 0px;
     }
+
+    
+    .navbar-collapse.show, .navbar-collapse.collapsing {
+
+position: absolute;
+background-color: white;
+z-index: 1000;
+padding: 25px;
+width: 100vw;
+height: 100vw;
+left: 0;
+top: 75px;
+}
 </style>
 
 <body>
@@ -453,16 +475,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" aria-current="page" href="#">Koolitused</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" aria-current="page" href="#">e-pood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">hinnad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">tunniplaan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">logi sisse</a>
                         </li>
                     </ul>
                 </div>
@@ -472,7 +503,7 @@
 
     <div>
 
-        <div class="container-fluid d-md-none">
+        <div class="container-fluid d-md-none px-0">
             <img src="img/avaleht-mobil.jpg" class="img-fluid">
         </div>
         <div class="container-fluid avaleht">
@@ -491,9 +522,9 @@
             </div>
         </div>
         <div class="row sticky-top">
-            <div class="col-1 d-none d-md-inline">
-                <button class="section-title "></button>
-                
+            <div class="col-1 d-none d-md-inline section-title">
+                <a href="https://www.facebook.com/groups/561281841757923" class="fb"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/petskratt/" class="ig"><img src="img/insta.svg"></a>
             </div>
         </div>
         <div class="container-fluid">
@@ -551,7 +582,7 @@
             <div class="container">
                 <h1><span style="text-transform: uppercase; font-weight: 300; color: darkgrey;">Vali tund
                     tutvumiseks</span></h1>
-                <div class="col-md-9 mt-5">
+                <div class="col-md-9 mt-2">
                  
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
@@ -739,7 +770,7 @@
                                 <div id="flush-collapse1" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading1" data-bs-parent="#accordionflushExample">
                                     <div class="accordion-body">
-                                        <img src="img/temea.jpg" class="img-fluid d-md-none mt-2" alt="Temea">
+                                        <img src="img/temea.jpg" class="img-fluid d-md-none mt-2 mb-3" alt="Temea">
                                         <p>
                                             <strong>This is the first item's accordion body.</strong> It is shown by
                                             default, until the collapse plugin adds the appropriate classes that we use
@@ -768,18 +799,20 @@
                                         aria-controls="flush-collapse2">
                                         Kerli
                                     </button>
-                                    <img src="img/kerli.jpg" class="img-fluid mt-2" alt="Kerli">
+                                    <img src="img/kerli.jpg" class="img-fluid d-none d-md-inline mt-2" alt="Kerli">
                                 </h2>
                                 <div id="flush-collapse2" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading2" data-bs-parent="#accordionflushExample">
                                     <div class="accordion-body">
+                                        <img src="img/kerli.jpg" class="img-fluid d-md-none mt-2" alt="Kerli">
+                                        <p>
                                         <strong>This is the first item's accordion body.</strong> It is shown by
                                         default, until the collapse plugin adds the appropriate classes that we use to
                                         style each element. These classes control the overall appearance, as well as the
                                         showing and hiding via CSS transitions. You can modify any of this with custom
                                         CSS or overriding our default variables. It's also worth noting that just about
                                         any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.
+                                        does limit overflow.</p>
                                     </div>
                                 </div>
                             </div>
@@ -794,18 +827,19 @@
                                         aria-controls="flush-collapse3">
                                         Krista
                                     </button>
-                                    <img src="img/krista.jpg" class="img-fluid mt-2" alt="Krista">
+                                    <img src="img/krista.jpg" class="img-fluid d-none d-md-inline mt-2" alt="Krista">
                                 </h2>
                                 <div id="flush-collapse3" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading3" data-bs-parent="#accordionflushExample">
                                     <div class="accordion-body">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        <img src="img/krista.jpg" class="img-fluid d-md-none mt-2" alt="Krista">
+                                       <p> <strong>This is the first item's accordion body.</strong> It is shown by
                                         default, until the collapse plugin adds the appropriate classes that we use to
                                         style each element. These classes control the overall appearance, as well as the
                                         showing and hiding via CSS transitions. You can modify any of this with custom
                                         CSS or overriding our default variables. It's also worth noting that just about
                                         any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.
+                                        does limit overflow.</p>
                                     </div>
                                 </div>
                             </div>
@@ -937,7 +971,7 @@
                 <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
               </div>
         </div>
-          <div class="col-sm-3">
+        <div class="col-sm-9 text-md-end">
             <p>Narva mnt 9E<br>Tallinn<br>555 10 575<br>info@infrajooga.ee</p>
         </div>
         <div class="col-sm-1">

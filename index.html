@@ -136,7 +136,7 @@
 
     .section-title {
         /* position: fixed; */
-     
+        display: block;
         background-color: black;
         font-weight: 300;
         text-transform: uppercase;
@@ -153,14 +153,16 @@
         height: 80px
     }
 
-    .section-title::after {
-        content: url(img/facebook.svg);
-        url(img/insta.svg)
-       
+
+    .section-title .fb img {
+        margin-top: 30px;
     }
 
-   
-  
+    .section-title .ig img {
+        margin-top: 30px;
+    }
+
+
 
     .section-title.tunnid {
         background-color: #FF9900;
@@ -197,7 +199,8 @@
         text-transform: uppercase;
         padding: 10px;
         font-size: 1rem;
-        align-items: center
+        align-items: center;
+
     }
 
     .nav-link {
@@ -206,6 +209,19 @@
 
     .nav-link:hover {
         color: #D40946;
+    }
+
+
+    .navbar-collapse.show, .navbar-collapse.collapsing {
+
+        position: absolute;
+        background-color: white;
+        z-index: 1000;
+        padding: 25px;
+        width: 100vw;
+        height: 100vw;
+        left: 0;
+        top: 75px;
     }
 
 
@@ -504,9 +520,9 @@
             </div>
         </div>
         <div class="row sticky-top">
-            <div class="col-1 d-none d-md-inline">
-                <button class="section-title "></button>
-                
+            <div class="col-1 d-none d-md-inline section-title">
+                <a href="https://www.facebook.com/groups/561281841757923" class="fb"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/petskratt/" class="ig"><img src="img/insta.svg"></a>
             </div>
         </div>
         <div class="container-fluid">
@@ -953,7 +969,7 @@
                 <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
               </div>
         </div>
-          <div class="col-sm-3">
+          <div class="col-sm-9 text-md-end">
             <p>Narva mnt 9E<br>Tallinn<br>555 10 575<br>info@infrajooga.ee</p>
         </div>
         <div class="col-sm-1">

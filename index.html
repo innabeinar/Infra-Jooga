@@ -33,7 +33,7 @@
         background-size: cover;
     }
 
- 
+
 
     .container {
         padding-left: 10px;
@@ -53,11 +53,11 @@
         padding-bottom: 20px;
         display: flex;
         align-content: flex-end;
-      
-       
-       
-       
-       
+
+
+
+
+
 
     }
 
@@ -91,19 +91,19 @@
     }
 
     .cta.tule-tundi {
-        
-        
+
+
         align-content: flex-end;
         align-items: flex-end;
-        
+
         font-weight: 300;
         line-height: 3rem;
         font-size: 2.25rem;
         text-transform: uppercase;
-        
+
     }
 
-  
+
 
 
 
@@ -153,26 +153,29 @@
         height: 80px
     }
 
-    
+
     .section-title .fb img {
         margin-top: 15px;
-       margin-right: 10px;
-       margin-bottom: 15px;
+        margin-right: 10px;
+        margin-bottom: 15px;
     }
 
     .section-title .ig img {
+
         margin-left: 15px;
         margin-top: 15px;
-       margin-right: 20px;
-       margin-bottom: 15px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
 
-    
 
-   
-  
 
-    
+
+
+
+
+
+
 
 
 
@@ -196,14 +199,14 @@
     .navbar {
 
         color: #030303;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         padding: 10px;
         font-size: 1rem;
         align-items: center
     }
 
-    
+
 
 
     .accordion-item {
@@ -363,7 +366,7 @@
         scroll-snap-type: unset;
     }
 
-  
+   
 
     /* esmane *
     .accordion-button.juh {
@@ -388,7 +391,7 @@
   /* mobiil */
     h2 {
         text-transform: uppercase;
-        font-size: 1,5rem;
+        font-size: 1, 5rem;
         font-weight: 300;
         color: #030303;
     }
@@ -439,23 +442,29 @@
         height: 0px;
     }
 
-    
-    .navbar-collapse.show, .navbar-collapse.collapsing {
 
-position: absolute;
-background-color: white;
-z-index: 1000;
-padding: 25px;
-width: 100vw;
-height: 100vw;
-left: 0;
-top: 75px;
-}
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+
+        position: absolute;
+        text-align: right;
+        background: white;       
+        opacity: 80%;
+        font-size: 1rem;
+        transition: 0.5s;
+        z-index: 1000;
+        padding: 40px;
+        width: 50vw;
+        height: 129vw;
+        right: 0;
+        top: 75px;
+    }
+  
 </style>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <img src="img/infajooga.svg" alt="Logo">
             <div class="navmain-menu">
@@ -467,23 +476,23 @@ top: 75px;
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-3 mb-lg-0">
                         <li class="nav-item">
-                            
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Koolitused</a>
+                            <a class="nav-link ms-3" aria-current="page" href="#">Koolitused</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">e-pood</a>
+                            <a class="nav-link ms-3" aria-current="page" href="#">e-pood</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">hinnad</a>
+                            <a class="nav-link ms-3" aria-current="page" href="#">hinnad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">tunniplaan</a>
+                            <a class="nav-link ms-3" aria-current="page" href="#">tunniplaan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">logi sisse</a>
+                            <a class="nav-link ms-3" aria-current="page" href="#">logi sisse</a>
                         </li>
                     </ul>
                 </div>
@@ -515,7 +524,7 @@ top: 75px;
             <div class="col-1 d-none d-md-inline section-title">
                 <a href="https://www.instagram.com/infrajooga/" class="ig"><img src="img/insta.svg"></a>
                 <a href="https://www.facebook.com/InfraJooga" class="fb"><img src="img/facebook.svg"></a>
-                
+
             </div>
         </div>
         <div class="container-fluid">
@@ -572,9 +581,9 @@ top: 75px;
         </div>-->
             <div class="container">
                 <h1><span style="text-transform: uppercase; font-weight: 300; color: darkgrey;">Vali tund
-                    tutvumiseks</span></h1>
+                        tutvumiseks</span></h1>
                 <div class="col-md-9 mt-2">
-                 
+
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -582,7 +591,7 @@ top: 75px;
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
 
-                                   <h2> Vinyasa flow</h2>
+                                    <h2> Vinyasa flow</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -628,7 +637,7 @@ top: 75px;
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                   <h2> yin yoga</h2>
+                                    <h2> yin yoga</h2>
 
                                 </button>
                             </h2>
@@ -659,7 +668,7 @@ top: 75px;
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseFour" aria-expanded="false"
                                     aria-controls="flush-collapseFour">
-                                   <h2> rasedate jooga</h2>
+                                    <h2> rasedate jooga</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse"
@@ -675,7 +684,7 @@ top: 75px;
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseFive" aria-expanded="false"
                                     aria-controls="flush-collapseFive">
-                                   <h2> jooga eratund</h2>
+                                    <h2> jooga eratund</h2>
                                 </button>
                             </h2>
                             <div id="flush-collapseFive" class="accordion-collapse collapse"
@@ -694,28 +703,31 @@ top: 75px;
         </div>
         <div class="container-fluid banner">
             <div class="container">
-            <div class="row mt-5 justify-content-between">
-            <div class="col-md-4 px-0">
-                <div class="cta tule-tundi">
-                    <p><a href="tunniplaan.html">esimene<br>samm</a></p>
-                </div>
-            </div>
-        
-            
-                <div class="col-md-7 px-0 ms-1">
-                    <p><h3> Esimene samm on kõige olulisem!</h3>
-                    </p>
-                    <p> Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas. 
- 
-                        Tunnid sobivad nii algajatele kui ka edasijõudnutele kuna jooga annab võimaluse harjutuste koormust reguleerida nii, et saad ise raskusastme valida ja järgida oma keha võimeid. 
-                    </p>
-                </div>
-            </div>
+                <div class="row mt-5 justify-content-between">
+                    <div class="col-md-4 px-0">
+                        <div class="cta tule-tundi">
+                            <p><a href="tunniplaan.html">esimene<br>samm</a></p>
+                        </div>
+                    </div>
 
-               
+
+                    <div class="col-md-7 px-0 ms-1">
+                        <p>
+                        <h3> Esimene samm on kõige olulisem!</h3>
+                        </p>
+                        <p> Oled oodatud meie stuudiosse, kui alles alustad joogaga tutvumist ning ka siis kui oled juba
+                            joogaga tutvust teinud ja soovid jätkata oma teekonda joogamaailmas.
+
+                            Tunnid sobivad nii algajatele kui ka edasijõudnutele kuna jooga annab võimaluse harjutuste
+                            koormust reguleerida nii, et saad ise raskusastme valida ja järgida oma keha võimeid.
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-         <!--<div class="container-fluid">
+        <!--<div class="container-fluid">
             <div class="container banner">
                 <div class="row">
 
@@ -740,7 +752,7 @@ top: 75px;
         </div> -->
         <div class="container-fluid">
 
-           
+
             <div class="container">
                 <div class="row justify-content-center mt-3">
                     <p>
@@ -797,13 +809,19 @@ top: 75px;
                                     <div class="accordion-body">
                                         <img src="img/kerli.jpg" class="img-fluid d-md-none mt-2" alt="Kerli">
                                         <p>
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It's also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.</p>
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -824,19 +842,24 @@ top: 75px;
                                     aria-labelledby="flush-heading3" data-bs-parent="#accordionflushExample">
                                     <div class="accordion-body">
                                         <img src="img/krista.jpg" class="img-fluid d-md-none mt-2" alt="Krista">
-                                       <p> <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It's also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.</p>
+                                        <p> <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   <!-- <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="accordion" id="accordionflushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading4">
@@ -953,27 +976,25 @@ top: 75px;
 
     <div class="container-fluid footer">
         <div class="container footer">
-        <div class="row justify-content-between">
-          <div class="col-sm-3 ">
-            <img src="img/ij-logo.svg" class="img-fluid d-none d-md-inline" alt="logo">
-          </div>
-          <div class="container-fluid d-md-none">
-            <div class="col-sm-3 ">
-                <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
-              </div>
+            <div class="row justify-content-between">
+                <div class="col-sm-3 ">
+                    <img src="img/ij-logo.svg" class="img-fluid d-none d-md-inline" alt="logo">
+                </div>
+                <div class="container-fluid d-md-none">
+                    <div class="col-sm-3 ">
+                        <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-9 text-md-end">
+                    <p>Narva mnt 9E<br>Tallinn<br>555 10 575<br>info@infrajooga.ee</p>
+                </div>
+                <div class="col-sm-1">
+                    <a href="https://www.facebook.com/InfraJooga" class="fb d-md-none"><img src="img/facebook-footer.svg"></a>
+                    <a href="https://www.instagram.com/infrajooga/" class="ig d-md-none"><img src="img/insta-footer.svg"></a>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-9 text-md-end">
-            <p>Narva mnt 9E<br>Tallinn<br>555 10 575<br>info@infrajooga.ee</p>
-        </div>
-        <div class="col-sm-1">
-            <img src="img/facebook-footer.svg" class="img-responsive d-md-none mb-2" alt="logo">
-           
-            <img src="img/insta-footer.svg" class="img-responsive d-md-none mb-2" alt="logo">
-        
-        </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
     </div>
 

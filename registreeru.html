@@ -30,7 +30,7 @@
     .container-fluid.avaleht {
 
         background: linear-gradient(180deg, #D40946, #F39200);
-  
+
         background-size: cover;
     }
 
@@ -40,7 +40,7 @@
         padding-left: 10px;
     }
 
-  
+
 
     .container-fluid.footer {
         background-color: #030303;
@@ -167,26 +167,27 @@
         margin-bottom: 15px;
     }
 
-   .form-control{
-       border-radius: 0px;
-       border-style: none;
-}
+    .form-control {
+        border-radius: 0px;
+        border-style: none;
+    }
 
-.form-label {
-    color: #fff;
-    font-size: small;
-}
+    .form-label {
+        color: #fff;
+        font-size: small;
+    }
 
-.form-label.registreeru{
-  
-    color: #000;
+    .form-label.registreeru {
 
-}
-.form-label.registreeru:hover{
-    text-decoration: underline;
-    color: #000;
+        color: #000;
 
-}
+    }
+
+    .form-label.registreeru:hover {
+        text-decoration: underline;
+        color: #000;
+
+    }
 
 
 
@@ -197,7 +198,7 @@
 
     .container-fluid.footer {
         background-color: #030303;
-        
+
         padding-top: 55px;
         padding-bottom: 55px;
         padding-left: 40px;
@@ -213,11 +214,7 @@
     }
 
 
-    .container.logisisse {
-       
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+   
 
 
     .navbar {
@@ -427,7 +424,12 @@
     .navbar-light .navbar-nav .nav-link {
         color: white;
     }
-
+    .container.logisisse {
+           
+            padding-top: 50px;
+            padding-bottom: 70px;
+            color: #fff;
+        }
     /* tablet */
 
     @media (min-width: 768px) {
@@ -442,11 +444,13 @@
         .navbar-light .navbar-nav .nav-link {
             color: #030303;
         }
+
         .container.logisisse {
-        margin-left: 15%;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+            margin-left: 15%;
+            padding-top: 50px;
+            padding-bottom: 70px;
+            color: #fff;
+        }
     }
 
     /* desktop */
@@ -462,6 +466,12 @@
 
         .navbar-light .navbar-nav .nav-link {
             color: #030303;
+        }
+        .container.logisisse {
+            margin-left: 15%;
+            padding-top: 50px;
+            padding-bottom: 70px;
+            color: #fff;
         }
 
     }
@@ -543,39 +553,66 @@
     </nav>
     <div class="container-fluid avaleht">
         <div class="container logisisse">
-           
+<div class="row">
+    <div class="col-md-3 offset-md-3">
+
+        <p>Tere tulemast Infra Joogasse!</p>
+    </div>
+</div>
             <div class="row">
                 <div class="col-md-3 offset-md-3">
-                    <label for="formGroupExampleInput" class="form-label">E-mail</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput"
-                        placeholder="Sisesta e-mail">
+                    <label for="formGroupExampleInput" class="form-label">Nimi</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nimi">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 offset-md-3 mt-3">
+                    <label for="formGroupExampleInput" class="form-label">Perekonnanimi</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Perekonnanimi">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3 mt-3">
+                    <label for="formGroupExampleInput" class="form-label">Telefon</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefon">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3 mt-3">
+                    <label for="formGroupExampleInput" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="E-mail">
+                </div>
+            </div>
+      
+            <div class="row">
+                <div class="col-md-3 offset-md-3 mt-3">
                     <label for="formGroupExampleInput" class="form-label">Parool</label>
                     <input type="password" class="form-control" id="formGroupExampleInput"
-                        placeholder="Sisesta parool"><a href="#" class="form-label registreeru">Unustasid parooli?</a>
+                        placeholder="Sisesta parool">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3 mt-3">
+                    <label for="formGroupExampleInput" class="form-label">Kinnitage parool</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput"
+                        placeholder="Sisesta parool">
+                </div>
+            </div>
+        
 
-                <div class="row">
-                    <div class="col-md-3 offset-md-3 mt-1">
-                        <div class="col-md-3 px-0">
-                            <div class="cta tule-tundi">
-                                <p><a href="index.html">logi <br> sisse</a></p>
-                            </div>
-                        </div>
-
+        <div class="row">
+            <div class="col-md-3 offset-md-3 mt-1">
+                <div class="col-md-3 px-0">
+                    <div class="cta tule-tundi">
+                        <p><a href="submited-2.html">saada <br> andmed</a></p>
                     </div>
                 </div>
-                <div class="row align-content-end">
-                    <div class="col-md-3 offset-md-3">
-                      <a href="registreeru.html" class="form-label registreeru">Registreeru kasutajaks</a>
-                    </div>
-                </div>
+
             </div>
         </div>
+        
+    </div>
+    </div>
     </div>
 
 

@@ -25,15 +25,26 @@
 
     .container-fluid {
         position: relative;
-        text-align: center;
+
     }
+
     .centered {
+
         text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .centered.mobil {
+
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     .container-fluid.avaleht {
         height: 600px;
@@ -47,13 +58,9 @@
         padding-left: 10px;
     }
 
-    .container {
-        padding-left: 10px;
-    }
 
-    .container-fluid.footer {
-        background-color: #030303;
-    }
+
+
 
 
     .cta {
@@ -142,6 +149,23 @@
 
     }
 
+    .form-label {
+        color: #fff;
+        font-size: small;
+    }
+
+    .form-label.registreeru {
+
+        color: #000;
+
+    }
+
+    .form-label.registreeru:hover {
+        text-decoration: underline;
+        color: #000;
+
+    }
+
     .section-title {
         /* position: fixed; */
         display: block;
@@ -189,7 +213,7 @@
 
     .container-fluid.footer {
         background-color: #030303;
-
+        margin-top: 0px;
         padding-top: 55px;
         padding-bottom: 55px;
         padding-left: 40px;
@@ -399,7 +423,7 @@
   /* mobiil */
     h2 {
         text-transform: uppercase;
-        font-size: 1, 5rem;
+        font-size: 3rem;
         font-weight: 300;
         color: #030303;
     }
@@ -410,13 +434,21 @@
 
     .navbar-light .navbar-nav .nav-link {
         color: white;
+
+    }
+
+    h4 {
+
+        font-size: 1rem;
+        font-weight: 300;
+        color: #030303;
     }
 
     /* tablet */
 
     @media (min-width: 768px) {
         h2 {
-            font-size: 1, 5rem;
+            font-size: 3rem;
         }
 
         p {
@@ -425,6 +457,12 @@
 
         .navbar-light .navbar-nav .nav-link {
             color: #030303;
+        }
+
+        h4 {
+
+            font-size: 1rem;
+
         }
     }
 
@@ -443,6 +481,11 @@
             color: #030303;
         }
 
+        h4 {
+
+            font-size: 1, 5rem;
+
+        }
     }
 
     .col-1 {
@@ -466,12 +509,7 @@
         height: 0px;
     }
 
-    h4 {
 
-font-size: 1, 5rem;
-font-weight: 300;
-color: #030303;
-}
     .navbar-collapse.show,
     .navbar-collapse.collapsing {
 
@@ -532,28 +570,39 @@ color: #030303;
     <div class="container-fluid d-md-none px-0">
         <img src="img/error-mobil.jpg" class="img-fluid">
     </div>
+    <div class="centered mobil d-md-none px-0">
+        <p>
+        <h2>ommmm...</h2>
+        </p>
+
+        <p>
+        <h4>Midagi läks valesti. Proovi palun uuesti.</h4>
+        </p>
+        <p><a href="index.html" class="form-label registreeru">Avalehele</a></p>
+
+    </div>
     <div class="container d-none d-md-inline px-0">
-       
-            <img src="img/error.jpg" class="img-fluid ">
 
-            <div class="centered">
-                <p><h2>ommmm...</h2></p>
-                
-                <p><h4>Midagi läks valesti. Proovi palun uuesti.</h4></p>
-               
-            </div>
+        <img src="img/error.jpg" class="img-fluid ">
 
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <a href="index.html" class="form-label registreeru">Avalehele</a>
-                </div>
-            </div>
-       
-    </div>
+        <div class="centered">
+            <p>
+            <h2>ommmm...</h2>
+            </p>
 
+            <p>
+            <h4>Midagi läks valesti. Proovi palun uuesti.</h4>
+            </p>
+            <p><a href="index.html" class="form-label registreeru">Avalehele</a></p>
+
+        </div>
 
 
     </div>
+
+
+
+
 
 
 
@@ -568,7 +617,7 @@ color: #030303;
                     <img src="img/ij-logo.svg" class="img-fluid d-none d-md-inline" alt="logo">
                 </div>
                 <div class="container-fluid d-md-none">
-                    <div class="col-sm-3 ">
+                    <div class="col-sm-3 px-0 ">
                         <img src="img/logo-footer.svg" class="img-responsive mb-3" alt="logo">
                     </div>
                 </div>
